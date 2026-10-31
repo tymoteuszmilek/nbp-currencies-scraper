@@ -91,6 +91,6 @@ def split_date_range(
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     with NBPClient() as client:
-        res = client.get_rates(start_date=date(2025, 1, 5), end_date=date(2025, 1, 8))
+        res = client.get_rates(start_date=date(2025, 1, 8), end_date=date(2025, 1, 8))
         for each_row in res:
             print(each_row)
